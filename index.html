@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chrome App</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+	<div id="settings">
+		<a href="#" id="settingIcon"><i class="material-icons">settings</i></a>
+
+		<div id="settingBox" class="hidden">
+			<div id="loginName"></div>
+			<button id="logoutBtn">Logout</button>
+
+			<div id="popUp" class="hidden">
+				Are you sure you want to log out?<br>
+				The information will be deleted.
+				<br>
+				<button id="logoutBtn2">Logout</button>
+			</div>
+		</div>
+	</div>
+	
+	<main>
+		<h2 id="todayDate"></h2>
+
+		<h1 id="greeting" class="hidden"></h1>
+		
+		<form id="loginForm" class="hidden">
+			<input type="text" placeholder="Please enter your name" required maxlength="15">
+			<br>
+			<button>Login</button>
+		</form>
+
+		<section id="todo" class="hidden">
+			<i id="add" class="material-icons md-36">add</i>
+
+			<div id="todoBox">
+				<form id="todoForm">
+					<input type="text" placeholder="Write a To Do and press enter"required maxlength="50">
+				</form>
+	
+				<ul id="todoList"></ul>
+			</div>
+		</section>
+			
+		<div id="weather">
+			<span></span>
+			<span></span>
+		</div>
+	</main>
+
+	<div id="background"></div>
+
+	<script src="./js/login&out.js"></script>
+	<script src="./js/clock.js"></script>
+	<script src="./js/todo.js"></script>
+	<script src="./js/background.js"></script>
+	<script src="./js/weather.js"></script>
+</body>
+</html>
