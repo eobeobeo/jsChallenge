@@ -9,6 +9,7 @@
       rel="stylesheet">
 </head>
 <body>
+	<!-- s: settings -->
 	<div id="settings">
 		<a href="#" id="settingIcon"><i class="material-icons">settings</i></a>
 
@@ -24,18 +25,24 @@
 			</div>
 		</div>
 	</div>
+	<!-- e: settings -->
 	
 	<main>
+		<!-- todayDate -->
 		<h2 id="todayDate"></h2>
 
+		<!-- greeting -->
 		<h1 id="greeting" class="hidden"></h1>
 		
+		<!-- s: loginForm -->
 		<form id="loginForm" class="hidden">
 			<input type="text" placeholder="Please enter your name" required maxlength="15">
 			<br>
 			<button>Login</button>
 		</form>
+		<!-- e: loginForm -->
 
+		<!-- s: todo -->
 		<section id="todo" class="hidden">
 			<i id="add" class="material-icons md-36">add</i>
 
@@ -47,11 +54,14 @@
 				<ul id="todoList"></ul>
 			</div>
 		</section>
-			
+		<!-- e: todo -->
+
+		<!-- s: weather -->
 		<div id="weather">
 			<span></span>
 			<span></span>
 		</div>
+		<!-- e: weather -->
 	</main>
 
 	<div id="background"></div>
